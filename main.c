@@ -2,13 +2,8 @@
 
 int main() {
     initscr();
-    cbreak();
-    noecho();
+    move(5, 10);
     printw("Hello World!");
-    int ch = getch();
-
-    printw("\nYou entered:");
-    printw("%c", ch);
     refresh();
     getch();
     endwin();
